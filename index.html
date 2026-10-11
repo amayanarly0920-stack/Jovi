@@ -1,0 +1,390 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff0f6">
+  <meta name="description" content="Jovi: descubre lugares hermosos y viajes especiales.">
+  <title>Jovi — Viajes que se sienten</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <div class="announcement">
+    ✿ Tu próxima historia comienza aquí · Explora sin prisa
+  </div>
+
+  <header class="site-header" id="inicio">
+    <a class="logo" href="#inicio">
+      <span class="logo-mark">j</span>ovi<span class="logo-dot">.</span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+      <span></span><span></span>
+    </button>
+
+    <nav class="nav" id="mainNav">
+      <a href="#destinos">Destinos</a>
+      <a href="#experiencias">Experiencias</a>
+      <a href="#inspiracion">Inspiración</a>
+      <a href="#nosotros">Nosotros</a>
+      <a class="nav-cta" href="#chat" id="openChatFromNav">
+        Hablemos ↗
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">✦ VIAJAR TAMBIÉN ES SENTIR</span>
+
+        <h1>Hay lugares<br>que se quedan <em>contigo.</em></h1>
+
+        <p>
+          Escapadas bonitas, rincones inesperados y recuerdos que merecen
+          un lugar en tu historia. Encuentra tu próxima aventura con Jovi.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-dark" href="#destinos">
+            Explorar destinos ↗
+          </a>
+          <a class="text-link" href="#inspiracion">
+            ▶ Encuentra inspiración
+          </a>
+        </div>
+
+        <div class="hero-social-proof">
+          <div class="avatar-stack">
+            <span>🌷</span><span>☀️</span><span>🌊</span>
+          </div>
+          <div>
+            <strong>Pequeños viajes, grandes recuerdos</strong>
+            <small>Ideas para tu próxima escapada</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <div class="hero-photo">
+          <img
+            src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=1200&q=85"
+            alt="Pueblo costero italiano"
+          >
+          <div class="photo-label">
+            <span>✿</span>
+            <div>
+              <strong>Cinque Terre, Italia</strong>
+              <small>Un rincón para soñar</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="floating-note note-top">✧ Colecciona momentos</div>
+
+        <div class="floating-note note-bottom">
+          <span class="note-icon">♡</span>
+          <div>
+            <strong>Viaja a tu manera</strong>
+            <small>Sin prisa, con emoción</small>
+          </div>
+        </div>
+
+        <div class="hero-sun">✳</div>
+      </div>
+
+      <div class="hero-bottom">
+        <span>01 / 04</span>
+        <div class="hero-line"><i></i></div>
+        <span>DESCUBRE LO EXTRAORDINARIO</span>
+      </div>
+    </section>
+
+    <section class="intro section-wrap" id="nosotros">
+      <div class="intro-flower">✿</div>
+
+      <div class="intro-heading">
+        <span class="eyebrow">UN MUNDO POR DESCUBRIR</span>
+        <h2>No necesitas ir<br>lejos para <em>sentirlo todo.</em></h2>
+      </div>
+
+      <p>
+        En Jovi creemos que viajar no es solo llegar a un lugar.
+        Es probar algo nuevo, conocer otras formas de vivir y
+        volver con el corazón más lleno.
+      </p>
+    </section>
+
+    <section class="destinations section-wrap" id="destinos">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">TU PRÓXIMA POSTAL</span>
+          <h2>Destinos que <em>enamoran</em></h2>
+        </div>
+        <a class="text-link" href="#chat">Ayúdame a elegir ↗</a>
+      </div>
+
+      <div class="filter-row" role="group" aria-label="Filtrar destinos">
+        <button class="filter-chip active" data-filter="todos">Todos los lugares</button>
+        <button class="filter-chip" data-filter="playa">Sol y playa</button>
+        <button class="filter-chip" data-filter="naturaleza">Naturaleza</button>
+        <button class="filter-chip" data-filter="ciudad">Ciudad y cultura</button>
+      </div>
+
+      <div class="destination-grid">
+        <article class="destination-card tall" data-category="playa">
+          <div class="destination-image">
+            <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=900&q=85" alt="Playa tropical">
+            <button class="save-button" aria-label="Guardar destino" data-save>♡</button>
+            <span class="image-tag">SOL Y PLAYA</span>
+          </div>
+          <div class="destination-info">
+            <div>
+              <h3>Islas del Caribe</h3>
+              <p>Agua turquesa, días lentos y brisa salada.</p>
+            </div>
+            <span class="card-arrow">↗</span>
+          </div>
+        </article>
+
+        <article class="destination-card" data-category="naturaleza">
+          <div class="destination-image">
+            <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=85" alt="Lago y montañas">
+            <button class="save-button" aria-label="Guardar destino" data-save>♡</button>
+            <span class="image-tag">NATURALEZA</span>
+          </div>
+          <div class="destination-info">
+            <div>
+              <h3>Montañas de ensueño</h3>
+              <p>Respira profundo y reconecta.</p>
+            </div>
+            <span class="card-arrow">↗</span>
+          </div>
+        </article>
+
+        <article class="destination-card" data-category="ciudad">
+          <div class="destination-image">
+            <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=900&q=85" alt="Calle de París">
+            <button class="save-button" aria-label="Guardar destino" data-save>♡</button>
+            <span class="image-tag">CIUDAD Y CULTURA</span>
+          </div>
+          <div class="destination-info">
+            <div>
+              <h3>París en primavera</h3>
+              <p>Cafés, arte y calles con encanto.</p>
+            </div>
+            <span class="card-arrow">↗</span>
+          </div>
+        </article>
+
+        <article class="destination-card" data-category="naturaleza">
+          <div class="destination-image">
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=85" alt="Picos de montaña">
+            <button class="save-button" aria-label="Guardar destino" data-save>♡</button>
+            <span class="image-tag">AVENTURA SUAVE</span>
+          </div>
+          <div class="destination-info">
+            <div>
+              <h3>Rutas entre montañas</h3>
+              <p>Pequeñas rutas, vistas infinitas.</p>
+            </div>
+            <span class="card-arrow">↗</span>
+          </div>
+        </article>
+
+        <article class="destination-card" data-category="ciudad">
+          <div class="destination-image">
+            <img src="https://images.unsplash.com/photo-1513735492246-483525079686?auto=format&fit=crop&w=900&q=85" alt="Arquitectura colorida">
+            <button class="save-button" aria-label="Guardar destino" data-save>♡</button>
+            <span class="image-tag">ARQUITECTURA</span>
+          </div>
+          <div class="destination-info">
+            <div>
+              <h3>Pueblos de colores</h3>
+              <p>Fachadas bonitas y vida local.</p>
+            </div>
+            <span class="card-arrow">↗</span>
+          </div>
+        </article>
+
+        <article class="destination-card" data-category="playa">
+          <div class="destination-image">
+            <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=900&q=85" alt="Olas del mar">
+            <button class="save-button" aria-label="Guardar destino" data-save>♡</button>
+            <span class="image-tag">PAUSA JUNTO AL MAR</span>
+          </div>
+          <div class="destination-info">
+            <div>
+              <h3>Un fin de semana azul</h3>
+              <p>Desconecta y deja que el mar hable.</p>
+            </div>
+            <span class="card-arrow">↗</span>
+          </div>
+        </article>
+      </div>
+
+      <p class="saved-status" id="savedStatus" aria-live="polite">
+        ♡ Guarda tus destinos favoritos tocando el corazón.
+      </p>
+    </section>
+
+    <section class="quote-band" id="inspiracion">
+      <div class="quote-decor">“</div>
+
+      <div class="quote-content">
+        <span class="eyebrow">UNA IDEA PARA LLEVAR</span>
+        <h2>“No colecciones cosas.<br><em>Colecciona momentos.</em>”</h2>
+        <p>
+          Haz espacio para lo inesperado, para las vistas nuevas
+          y las historias que aún no conoces.
+        </p>
+        <a href="#experiencias" class="button button-light">
+          Inspírame un poquito ↗
+        </a>
+      </div>
+
+      <div class="quote-image">
+        <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1000&q=85" alt="Barca en un lago">
+      </div>
+
+      <span class="quote-stamp">JOVI<br>TRAVEL CLUB</span>
+    </section>
+
+    <section class="experiences section-wrap" id="experiencias">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">VIAJA COMO TE SIENTAS</span>
+          <h2>¿Qué aventura <em>necesitas?</em></h2>
+        </div>
+        <p>Elige el mood y empieza a imaginar.</p>
+      </div>
+
+      <div class="experience-grid">
+        <button class="experience-card" data-mood="relax">
+          <span class="experience-icon">☁</span>
+          <span class="experience-title">Desconectar</span>
+          <span class="experience-desc">Paz, naturaleza y cero afán.</span>
+          <span class="experience-go">↗</span>
+        </button>
+
+        <button class="experience-card" data-mood="aventura">
+          <span class="experience-icon">✦</span>
+          <span class="experience-title">Aventurarme</span>
+          <span class="experience-desc">Nuevos caminos y sorpresas.</span>
+          <span class="experience-go">↗</span>
+        </button>
+
+        <button class="experience-card" data-mood="romantico">
+          <span class="experience-icon">♡</span>
+          <span class="experience-title">Enamorarse</span>
+          <span class="experience-desc">Atardeceres y lugares mágicos.</span>
+          <span class="experience-go">↗</span>
+        </button>
+
+        <button class="experience-card" data-mood="cultura">
+          <span class="experience-icon">✿</span>
+          <span class="experience-title">Descubrir</span>
+          <span class="experience-desc">Sabores, arte y tradiciones.</span>
+          <span class="experience-go">↗</span>
+        </button>
+      </div>
+
+      <div class="mood-result" id="moodResult" aria-live="polite">
+        Elige una experiencia para recibir una idea de viaje. ✿
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div class="newsletter-flower">✿</div>
+
+      <div>
+        <span class="eyebrow">CARTAS VIAJERAS</span>
+        <h2>Un poquito de inspiración<br>en tu bandeja de entrada.</h2>
+        <p>Ideas de destinos, listas bonitas y ganas de hacer maleta.</p>
+      </div>
+
+      <form id="newsletterForm" class="newsletter-form">
+        <label class="sr-only" for="emailInput">Tu correo electrónico</label>
+        <input type="email" id="emailInput" placeholder="Tu correo electrónico" required>
+        <button type="submit">Me apunto ↗</button>
+        <small id="newsletterMessage">Sin spam, solo buenas vibras. ♡</small>
+      </form>
+    </section>
+  </main>
+
+  <!-- Chat flotante -->
+  <div class="chat-widget" id="chatWidget">
+    <section class="chat-window chat-popup" id="chatPopup" aria-label="Chat de Jovi" aria-hidden="true">
+      <div class="chat-head">
+        <div class="chat-bot-avatar">j.</div>
+
+        <div>
+          <strong>Jovi Chat</strong>
+          <small><span class="online-dot"></span> Lista para inspirarte</small>
+        </div>
+
+        <button type="button" id="clearChat" aria-label="Reiniciar chat">↻</button>
+        <button type="button" id="closeChat" class="close-chat" aria-label="Cerrar chat">×</button>
+      </div>
+
+      <div class="chat-messages" id="chatMessages" aria-live="polite">
+        <div class="message bot-message">
+          ¡Holiii! 🌷 Soy Jovi, tu compañera de aventuras.
+          ¿Qué tipo de lugar te gustaría descubrir?
+        </div>
+      </div>
+
+      <div class="quick-replies">
+        <button type="button" data-reply="Quiero playa">🏝️ Playa</button>
+        <button type="button" data-reply="Quiero naturaleza">🌿 Naturaleza</button>
+        <button type="button" data-reply="Quiero ciudad">🏙️ Ciudad</button>
+      </div>
+
+      <form class="chat-input-row" id="chatForm">
+        <label class="sr-only" for="chatInput">Escribe tu mensaje</label>
+        <input id="chatInput" autocomplete="off" placeholder="Escribe aquí tu idea..." maxlength="250">
+        <button type="submit" aria-label="Enviar mensaje">↑</button>
+      </form>
+
+      <p class="chat-disclaimer">Asistente demostrativo · No realiza reservas.</p>
+    </section>
+
+    <button type="button" class="chat-launcher" id="chatLauncher" aria-label="Abrir chat de Jovi" aria-expanded="false">
+      <span class="launcher-icon" aria-hidden="true">♡</span>
+      <span>Habla con Jovi</span>
+      <span class="launcher-sparkle" aria-hidden="true">✦</span>
+    </button>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-main">
+      <a class="logo footer-logo" href="#inicio">
+        <span class="logo-mark">j</span>ovi<span class="logo-dot">.</span>
+      </a>
+      <p>Haz maleta para el corazón.<br>El mundo te espera. ♡</p>
+      <div class="footer-social">
+        <a href="#chat" aria-label="Chat">♡</a>
+        <a href="#destinos" aria-label="Destinos">✦</a>
+        <a href="#inspiracion" aria-label="Inspiración">↗</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Jovi Travel Journal</span>
+      <span>Hecho con cariño y ganas de viajar <b>✿</b></span>
+      <a href="#inicio">Volver arriba ↑</a>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
